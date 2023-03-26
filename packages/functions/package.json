@@ -1,0 +1,26 @@
+{
+  "name": "@sst-with-clerk-and-trpc/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "@types/node": "^18.15.3",
+    "sst": "^2.2.1"
+  },
+  "dependencies": {
+    "@aws-sdk/abort-controller": "^3.292.0",
+    "@aws-sdk/client-s3": "^3.294.0",
+    "@aws-sdk/lib-storage": "^3.294.0",
+    "@aws-sdk/s3-presigned-post": "^3.294.0",
+    "@aws-sdk/s3-request-presigner": "^3.294.0",
+    "@trpc/server": "^10.16.0",
+    "abort-controller": "link:@aws-sdk/@aws-sdk/abort-controller",
+    "ksuid": "^3.0.0",
+    "replicate-api": "^0.4.4",
+    "zod": "^3.21.4"
+  }
+}

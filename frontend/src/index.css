@@ -1,0 +1,9 @@
+@tailwind base;
+
+a {
+    color: #1e293b;
+    text-decoration: underline;
+}
+
+@tailwind components;
+@tailwind utilities;
