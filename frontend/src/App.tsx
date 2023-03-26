@@ -11,7 +11,15 @@ export default function App() {
     const [trpcClient] = useState(() =>
         trpc.createClient({
             links: [
-                httpBatchLink({url: trpcUrl}),
+                httpBatchLink({
+                    url: trpcUrl,
+                    headers() {
+                        return {
+                            Authorization: "foo",
+                        };
+                    },
+                }),
+
             ],
         }),
     );
